@@ -101,6 +101,30 @@
     .lang-btn.active { color: #059669; }
     .lang-btn:hover:not(.active) { color: #374151; }
     .lang-sep { color: #e5e7eb; font-size: 13px; user-select: none; }
+
+    /* ── Modals ───────────────────────────────────────────────── */
+    .modal-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.5); z-index: 999;
+      align-items: center; justify-content: center; padding: 24px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: #fff; border-radius: 20px; padding: 36px 40px;
+      max-width: 580px; width: 100%; max-height: 80vh;
+      overflow-y: auto; position: relative;
+    }
+    .modal-box h2 { font-size: 20px; font-weight: 800; margin: 0 0 20px; letter-spacing: -.02em; }
+    .modal-box h3 { font-size: 13.5px; font-weight: 700; margin: 20px 0 4px; color: #111827; }
+    .modal-box p  { font-size: 13.5px; color: #6b7280; line-height: 1.65; margin: 0 0 4px; }
+    .modal-close {
+      position: absolute; top: 16px; right: 20px;
+      background: none; border: none; font-size: 22px;
+      cursor: pointer; color: #9ca3af; line-height: 1; padding: 4px;
+    }
+    .modal-close:hover { color: #374151; }
+    html[lang="en"] .lang-es { display: none; }
+    html[lang="es"] .lang-en { display: none; }
   </style>
 </head>
 <body>
@@ -483,12 +507,83 @@
   <footer style="padding:42px 24px;text-align:center;">
     <div style="font-size:20px;font-weight:800;letter-spacing:-.02em;margin-bottom:16px;color:#111827;">Spending<span style="color:#059669;">AI</span></div>
     <div style="display:flex;justify-content:center;gap:28px;margin-bottom:20px;">
-      <a href="#" style="font-size:13.5px;color:#9ca3af;" data-i18n="footer.privacy">Privacidad</a>
-      <a href="#" style="font-size:13.5px;color:#9ca3af;" data-i18n="footer.terms">Términos</a>
-      <a href="mailto:hola@spendingai.app" style="font-size:13.5px;color:#9ca3af;" data-i18n="footer.contact">Contacto</a>
+      <a href="#" onclick="openModal('privacy');return false;" style="font-size:13.5px;color:#9ca3af;" data-i18n="footer.privacy">Privacidad</a>
+      <a href="#" onclick="openModal('terms');return false;" style="font-size:13.5px;color:#9ca3af;" data-i18n="footer.terms">Términos</a>
     </div>
     <p style="color:#d1d5db;font-size:13px;margin:0;" data-i18n="footer.made">Hecho con cariño en España · © 2026 SpendingAI</p>
   </footer>
+
+  <!-- ══ MODAL PRIVACIDAD ══════════════════════════════════════════════════ -->
+  <div id="modal-privacy" class="modal-overlay" onclick="if(event.target===this)closeModal('privacy')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('privacy')">✕</button>
+
+      <div class="lang-es">
+        <h2>Política de Privacidad</h2>
+        <h3>Responsable del tratamiento</h3>
+        <p>SpendingAI · info@spendingai.app</p>
+        <h3>¿Qué datos recogemos?</h3>
+        <p>Únicamente tu dirección de email, cuando la introduces voluntariamente en el formulario de lista de espera.</p>
+        <h3>¿Para qué los usamos?</h3>
+        <p>Para avisarte cuando la app esté disponible. Nada más.</p>
+        <h3>¿Cuánto tiempo los guardamos?</h3>
+        <p>Hasta que la app se lance y te enviemos el aviso, o hasta que nos pidas que los eliminemos.</p>
+        <h3>¿Dónde se guardan?</h3>
+        <p>En Supabase, con servidores en la Unión Europea (Frankfurt, Alemania). Cumple con el RGPD.</p>
+        <h3>¿Los compartimos con alguien?</h3>
+        <p>No. No cedemos, vendemos ni alquilamos tu email a terceros.</p>
+        <h3>Tus derechos</h3>
+        <p>Tienes derecho a acceder, rectificar o eliminar tus datos en cualquier momento. Escríbenos a info@spendingai.app y lo gestionamos.</p>
+      </div>
+
+      <div class="lang-en">
+        <h2>Privacy Policy</h2>
+        <h3>Data Controller</h3>
+        <p>SpendingAI · info@spendingai.app</p>
+        <h3>What data do we collect?</h3>
+        <p>Only your email address, which you voluntarily provide in the waitlist form.</p>
+        <h3>How do we use it?</h3>
+        <p>To notify you when the app is available. Nothing else.</p>
+        <h3>How long do we keep it?</h3>
+        <p>Until the app launches and we send you the notification, or until you ask us to delete it.</p>
+        <h3>Where is it stored?</h3>
+        <p>On Supabase, with servers in the European Union (Frankfurt, Germany). GDPR compliant.</p>
+        <h3>Do we share it?</h3>
+        <p>No. We do not sell, rent, or share your email with third parties.</p>
+        <h3>Your rights</h3>
+        <p>You have the right to access, correct, or delete your data at any time. Email us at info@spendingai.app.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ MODAL TÉRMINOS ════════════════════════════════════════════════════ -->
+  <div id="modal-terms" class="modal-overlay" onclick="if(event.target===this)closeModal('terms')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('terms')">✕</button>
+
+      <div class="lang-es">
+        <h2>Términos de Uso</h2>
+        <p>SpendingAI es un proyecto en desarrollo. Esta página es únicamente una lista de espera, no una app en funcionamiento.</p>
+        <h3>Al dejar tu email</h3>
+        <p>No adquieres ningún compromiso económico y nosotros no adquirimos ningún compromiso de lanzamiento contigo. Recibirás un único email informativo cuando la app esté disponible.</p>
+        <h3>Modificaciones</h3>
+        <p>Nos reservamos el derecho a modificar, cancelar o pivotar el proyecto en cualquier momento.</p>
+        <h3>Contacto</h3>
+        <p>info@spendingai.app</p>
+      </div>
+
+      <div class="lang-en">
+        <h2>Terms of Use</h2>
+        <p>SpendingAI is a project in development. This page is a waitlist only, not a working app.</p>
+        <h3>By leaving your email</h3>
+        <p>You make no financial commitment and we make no commitment to launch. You will receive one email when the app is ready.</p>
+        <h3>Modifications</h3>
+        <p>We reserve the right to modify, cancel, or pivot the project at any time.</p>
+        <h3>Contact</h3>
+        <p>info@spendingai.app</p>
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -843,6 +938,21 @@
       if (errEl) errEl.style.display = 'block';
     }
   }
+
+  /* ── Modals ─────────────────────────────────────────────────────────────── */
+  function openModal(id) {
+    document.getElementById('modal-' + id).classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    document.getElementById('modal-' + id).classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      ['privacy','terms'].forEach(closeModal);
+    }
+  });
 
   /* ── Init ───────────────────────────────────────────────────────────────── */
   (function () {
