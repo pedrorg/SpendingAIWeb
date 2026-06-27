@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SpendingAI — La app de gastos que realmente usarás</title>
-  <meta name="description" content="Registra, categoriza y comparte gastos con IA desde la web, móvil o Telegram. Sin fricción. Sin excusas.">
+  <title>SpendingAI · Tu tracker de gastos con IA</title>
+  <meta name="description" content="Apunta tus gastos como prefieras: en la app, por Telegram o por voz. La IA categoriza sola. Sin fricción. Sin excusas.">
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; }
@@ -134,8 +134,8 @@
   <nav style="max-width:1120px;margin:0 auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
     <div style="font-size:21px;font-weight:800;letter-spacing:-.02em;color:#111827;">Spending<span style="color:#059669;">AI</span></div>
     <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
-      <a href="#how" style="font-size:15px;color:#6b7280;font-weight:500;" data-i18n="nav.how">Cómo funciona</a>
-      <a href="#pricing" style="font-size:15px;color:#6b7280;font-weight:500;" data-i18n="nav.pricing">Precios</a>
+      <a href="#flow" style="font-size:15px;color:#6b7280;font-weight:500;" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#roadmap" style="font-size:15px;color:#6b7280;font-weight:500;" data-i18n="nav.roadmap">Roadmap</a>
       <div style="display:flex;align-items:center;gap:1px;border:1.5px solid #e5e7eb;border-radius:8px;padding:2px 4px;">
         <button id="btn-es" class="lang-btn active" onclick="setLang('es')">ES</button>
         <span class="lang-sep">|</span>
@@ -154,17 +154,17 @@
         <span data-i18n="hero.badge">En desarrollo · Sé el primero en probarlo</span>
       </div>
       <h1 style="font-size:clamp(34px,5vw,56px);line-height:1.05;font-weight:800;letter-spacing:-.03em;margin:22px 0 0;opacity:0;animation:fadeUp .6s ease both;animation-delay:.25s;" data-i18n-html="hero.h1">
-        La app de gastos<br>que <span style="color:#059669;">realmente usarás</span>.
+        Apunta tus gastos<br>como <span style="color:#059669;">tú prefieras</span>.
       </h1>
       <p style="font-size:clamp(16px,2vw,19px);line-height:1.6;color:#4b5563;max-width:500px;margin:20px 0 0;opacity:0;animation:fadeUp .6s ease both;animation-delay:.4s;" data-i18n="hero.p">
-        Registra, categoriza y comparte gastos desde la web, el móvil o Telegram. La IA lo categoriza sola — tú solo escribes lo que gastaste.
+        Escríbelo en la app, mándalo por Telegram o díselo por voz. La IA lo categoriza sola. El canal lo eliges tú en cada momento.
       </p>
       <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:30px;opacity:0;animation:fadeUp .6s ease both;animation-delay:.55s;">
         <a href="#signup" style="position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;background:#059669;color:#fff;font-size:16px;font-weight:700;padding:15px 28px;border-radius:12px;box-shadow:0 8px 20px rgba(5,150,105,.26);">
           <span data-i18n="hero.cta1">Quiero acceso anticipado</span>
           <span style="position:absolute;top:0;left:-70%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-18deg);animation:shimmerSweep 2.4s ease-in-out infinite;pointer-events:none;"></span>
         </a>
-        <a href="#how" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#111827;font-size:16px;font-weight:700;padding:15px 28px;border-radius:12px;border:1.5px solid #e5e7eb;" data-i18n="hero.cta2">
+        <a href="#flow" style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:#111827;font-size:16px;font-weight:700;padding:15px 28px;border-radius:12px;border:1.5px solid #e5e7eb;" data-i18n="hero.cta2">
           Ver cómo funcionará
         </a>
       </div>
@@ -192,7 +192,7 @@
           </div>
         </div>
       </div>
-      <div style="font-size:12.5px;color:#9ca3af;font-weight:500;letter-spacing:.01em;" data-i18n="hero.phone_label">Integración con Telegram — incluida en todos los planes</div>
+      <div style="font-size:12.5px;color:#9ca3af;font-weight:500;letter-spacing:.01em;" data-i18n="hero.phone_label">App · Telegram · Voz. Tú decides cómo apuntarlo</div>
     </div>
   </header>
 
@@ -206,15 +206,15 @@
     </div>
     <div style="text-align:center;">
       <div style="font-size:clamp(38px,5.5vw,52px);font-weight:800;color:#059669;letter-spacing:-.03em;">
-        <span data-count="3" data-suffix=" seg">0 seg</span>
+        <span data-count="3" data-suffix="">0</span><span data-i18n="stats.s2_suffix"> seg</span>
       </div>
       <div style="color:#6b7280;font-size:14.5px;margin-top:5px;" data-i18n="stats.s2">para registrar un gasto con IA</div>
     </div>
     <div style="text-align:center;">
       <div style="font-size:clamp(38px,5.5vw,52px);font-weight:800;color:#059669;letter-spacing:-.03em;">
-        <span data-count="14" data-suffix="">0</span>
+        <span data-count="2" data-suffix="">0</span><span data-i18n="stats.s3_suffix"> canales</span>
       </div>
-      <div style="color:#6b7280;font-size:14.5px;margin-top:5px;" data-i18n="stats.s3">días gratis para probar</div>
+      <div style="color:#6b7280;font-size:14.5px;margin-top:5px;" data-i18n="stats.s3">canales de entrada en desarrollo</div>
     </div>
   </section>
 
@@ -256,221 +256,181 @@
         <div data-reveal data-reveal-delay="0.25" class="hover-lift" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1px solid #eef0f2;border-radius:18px;padding:28px;">
           <div style="width:48px;height:48px;border-radius:13px;background:#f0fdf4;display:flex;align-items:center;justify-content:center;">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="9" cy="7" r="3"/>
-              <path d="M3 21v-2a5 5 0 0 1 10 0v2"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              <path d="M21 21v-2a4 4 0 0 0-3-3.87"/>
-              <line x1="19" y1="9.5" x2="23" y2="13.5" stroke-width="1.6"/>
-              <line x1="23" y1="9.5" x2="19" y2="13.5" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+              <line x1="8" y1="2" x2="16" y2="2" stroke-width="1.6"/>
             </svg>
           </div>
-          <h3 style="font-size:17px;font-weight:700;margin:16px 0 8px;" data-i18n="problem.c3.h">Gastos compartidos sin control</h3>
-          <p style="color:#6b7280;font-size:14.5px;line-height:1.6;margin:0;" data-i18n="problem.c3.p">Dividir la cena acaba siempre en «ya me lo apunto». Nadie lo apunta. Hay tensión. Es evitable.</p>
+          <h3 style="font-size:17px;font-weight:700;margin:16px 0 8px;" data-i18n="problem.c3.h">El dinero desaparece</h3>
+          <p style="color:#6b7280;font-size:14.5px;line-height:1.6;margin:0;" data-i18n="problem.c3.p">A final de mes no sabes dónde fue. Sin apuntarlo en el momento, no hay análisis posible. Y el momento siempre es inoportuno.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══ HOW IT WORKS ═══════════════════════════════════════════════════════ -->
-  <section id="how" style="padding:88px 24px;">
-    <div style="max-width:1080px;margin:0 auto;">
+  <!-- ══ INPUT FLOW ════════════════════════════════════════════════════════ -->
+  <section id="flow" style="padding:88px 24px;">
+    <div style="max-width:960px;margin:0 auto;">
       <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;margin-bottom:56px;">
-        <h2 style="font-size:clamp(26px,3.8vw,38px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;" data-i18n="how.title">Tres pasos. Sin curva de aprendizaje.</h2>
-        <p style="color:#6b7280;font-size:16px;margin:0;" data-i18n="how.sub">Úsalo desde la web, el móvil o Telegram — donde prefieras en cada momento.</p>
+        <h2 style="font-size:clamp(26px,3.8vw,38px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;" data-i18n="flow.title">Un sitio. Múltiples formas de llegar.</h2>
+        <p style="color:#6b7280;font-size:16px;margin:0;" data-i18n="flow.sub">Da igual cómo lo apuntes. La IA lo procesa y todo acaba ordenado en el mismo lugar.</p>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px;">
 
-        <div data-reveal data-reveal-delay="0.05" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;">
-          <div style="width:68px;height:68px;border-radius:20px;background:#f0fdf4;border:1px solid #a7f3d0;display:flex;align-items:center;justify-content:center;margin:0 auto;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="5" y="2" width="14" height="20" rx="2"/>
-              <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/>
-            </svg>
+      <!-- INPUTS -->
+      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;">
+        <div style="text-align:center;font-size:11px;font-weight:800;letter-spacing:.1em;color:#9ca3af;text-transform:uppercase;margin-bottom:16px;" data-i18n="flow.inputs_label">Cómo apuntas el gasto</div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+
+          <!-- Manual -->
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #a7f3d0;border-radius:14px;padding:14px 20px;box-shadow:0 2px 8px rgba(5,150,105,.08);">
+            <div style="width:38px;height:38px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;" data-i18n="flow.in1_h">Manual en la app</div>
+              <div style="font-size:11.5px;color:#6b7280;" data-i18n="flow.in1_s">iOS y Android</div>
+            </div>
           </div>
-          <div style="font-size:12px;font-weight:800;color:#059669;margin-top:18px;letter-spacing:.08em;" data-i18n="how.s1_label">PASO 01</div>
-          <h3 style="font-size:19px;font-weight:700;margin:6px 0 8px;" data-i18n="how.s1.h">Abre la app o Telegram</h3>
-          <p style="color:#6b7280;font-size:14.5px;line-height:1.6;margin:0 auto;max-width:270px;" data-i18n="how.s1.p">Disponible en web, iOS y Android. O desde Telegram si prefieres no abrir nada nuevo.</p>
-        </div>
 
-        <div data-reveal data-reveal-delay="0.15" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;">
-          <div style="width:68px;height:68px;border-radius:20px;background:#f0fdf4;border:1px solid #a7f3d0;display:flex;align-items:center;justify-content:center;margin:0 auto;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
-              <path d="M18.5 2.5a2.12 2.12 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
-            </svg>
+          <!-- Telegram -->
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #a7f3d0;border-radius:14px;padding:14px 20px;box-shadow:0 2px 8px rgba(5,150,105,.08);">
+            <div style="width:38px;height:38px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3L3 10.5l7 1.5"/><path d="M10 12l5 9 2.5-7 5.5-2"/><path d="M10 12l4 2"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;" data-i18n="flow.in2_h">Bot de Telegram</div>
+              <div style="font-size:11.5px;color:#6b7280;" data-i18n="flow.in2_s">sin abrir la app</div>
+            </div>
           </div>
-          <div style="font-size:12px;font-weight:800;color:#059669;margin-top:18px;letter-spacing:.08em;" data-i18n="how.s2_label">PASO 02</div>
-          <h3 style="font-size:19px;font-weight:700;margin:6px 0 8px;" data-i18n="how.s2.h">Escribe lo que gastaste</h3>
-          <p style="color:#6b7280;font-size:14.5px;line-height:1.6;margin:0 auto;max-width:270px;" data-i18n="how.s2.p">«Mercadona 67,40» o «cena 58 y dos cañas 6». La IA entiende lenguaje normal y categoriza sin que toques nada.</p>
-        </div>
 
-        <div data-reveal data-reveal-delay="0.25" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;">
-          <div style="width:68px;height:68px;border-radius:20px;background:#f0fdf4;border:1px solid #a7f3d0;display:flex;align-items:center;justify-content:center;margin:0 auto;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-              <polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
+          <!-- Voz (próximamente) -->
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1.5px dashed #d1d5db;border-radius:14px;padding:14px 20px;opacity:.7;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;color:#6b7280;" data-i18n="flow.in3_h">Voz (Siri / Google)</div>
+              <div style="font-size:11px;color:#9ca3af;font-weight:600;" data-i18n="flow.in3_s">Próximamente</div>
+            </div>
           </div>
-          <div style="font-size:12px;font-weight:800;color:#059669;margin-top:18px;letter-spacing:.08em;" data-i18n="how.s3_label">PASO 03</div>
-          <h3 style="font-size:19px;font-weight:700;margin:6px 0 8px;" data-i18n="how.s3.h">Listo. Dashboard actualizado.</h3>
-          <p style="color:#6b7280;font-size:14.5px;line-height:1.6;margin:0 auto;max-width:270px;" data-i18n="how.s3.p">El gasto aparece categorizado en tu panel. Si hay deuda compartida, se recalcula al instante.</p>
-        </div>
 
+          <!-- Foto (futuro) -->
+          <div style="display:flex;align-items:center;gap:10px;background:#f9fafb;border:1.5px dashed #d1d5db;border-radius:14px;padding:14px 20px;opacity:.5;">
+            <div style="width:38px;height:38px;border-radius:10px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;color:#9ca3af;" data-i18n="flow.in4_h">Foto de ticket</div>
+              <div style="font-size:11px;color:#d1d5db;font-weight:600;" data-i18n="flow.in4_s">Fase 3</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ARROW + AI -->
+      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;display:flex;flex-direction:column;align-items:center;margin:28px 0;">
+        <div style="width:2px;height:28px;background:linear-gradient(to bottom,#a7f3d0,#059669);border-radius:2px;"></div>
+        <div style="position:relative;background:linear-gradient(135deg,#059669,#0d9488);border-radius:20px;padding:20px 36px;text-align:center;box-shadow:0 8px 28px rgba(5,150,105,.28);">
+          <div style="position:absolute;top:0;left:-70%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-18deg);animation:shimmerSweep 2.4s ease-in-out infinite;pointer-events:none;border-radius:20px;overflow:hidden;"></div>
+          <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:-.02em;">Spending<span style="opacity:.85;">AI</span></div>
+          <div style="font-size:12.5px;color:rgba(255,255,255,.8);margin-top:4px;font-weight:500;" data-i18n="flow.ai_label">IA categoriza automáticamente</div>
+        </div>
+        <div style="width:2px;height:28px;background:linear-gradient(to bottom,#059669,#a7f3d0);border-radius:2px;"></div>
+      </div>
+
+      <!-- OUTPUTS -->
+      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;">
+        <div style="text-align:center;font-size:11px;font-weight:800;letter-spacing:.1em;color:#9ca3af;text-transform:uppercase;margin-bottom:16px;" data-i18n="flow.outputs_label">Lo que obtienes</div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;">
+
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #a7f3d0;border-radius:14px;padding:14px 20px;box-shadow:0 2px 8px rgba(5,150,105,.08);">
+            <div style="width:38px;height:38px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;" data-i18n="flow.out1_h">Dashboard</div>
+              <div style="font-size:11.5px;color:#6b7280;" data-i18n="flow.out1_s">gráficas por categoría</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #a7f3d0;border-radius:14px;padding:14px 20px;box-shadow:0 2px 8px rgba(5,150,105,.08);">
+            <div style="width:38px;height:38px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;" data-i18n="flow.out2_h">Resumen mensual</div>
+              <div style="font-size:11.5px;color:#6b7280;" data-i18n="flow.out2_s">cuánto y en qué</div>
+            </div>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #a7f3d0;border-radius:14px;padding:14px 20px;box-shadow:0 2px 8px rgba(5,150,105,.08);">
+            <div style="width:38px;height:38px;border-radius:10px;background:#ecfdf5;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div>
+              <div style="font-size:13.5px;font-weight:700;" data-i18n="flow.out3_h">Historial completo</div>
+              <div style="font-size:11.5px;color:#6b7280;" data-i18n="flow.out3_s">todos tus gastos</div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ══ COMPARISON ════════════════════════════════════════════════════════ -->
-  <section style="background:#f9fafb;padding:88px 24px;">
-    <div style="max-width:900px;margin:0 auto;">
-      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;margin-bottom:46px;">
-        <h2 style="font-size:clamp(26px,3.8vw,38px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;" data-i18n="cmp.title">Por qué funciona mejor</h2>
-        <p style="color:#6b7280;font-size:16px;margin:0;" data-i18n-html="cmp.sub">Otras apps te hacen elegir entre presupuesto personal <em>o</em> gastos compartidos. Nosotros hacemos las dos cosas, con IA.</p>
+  <!-- ══ ROADMAP ════════════════════════════════════════════════════════════ -->
+  <section id="roadmap" style="background:#f9fafb;padding:88px 24px;">
+    <div style="max-width:860px;margin:0 auto;">
+      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;margin-bottom:52px;">
+        <h2 style="font-size:clamp(26px,3.8vw,38px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;" data-i18n="roadmap.title">El plan, sin humo.</h2>
+        <p style="color:#6b7280;font-size:16px;margin:0;" data-i18n="roadmap.sub">Esto es lo que hay ahora y lo que viene. Sin fechas inventadas.</p>
       </div>
-      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1px solid #eef0f2;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.04);">
-        <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:14px 22px;background:#f9fafb;border-bottom:1px solid #f0f2f4;align-items:center;gap:8px;">
-          <div></div>
-          <div style="text-align:center;font-weight:800;color:#059669;font-size:14px;">SpendingAI</div>
-          <div style="text-align:center;font-weight:600;color:#9ca3af;font-size:12.5px;line-height:1.3;" data-i18n-html="cmp.col_budget">Apps de<br>presupuesto</div>
-          <div style="text-align:center;font-weight:600;color:#9ca3af;font-size:12.5px;line-height:1.3;" data-i18n-html="cmp.col_split">Apps de<br>división</div>
-        </div>
-        <div class="table-row" style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:15px 22px;border-bottom:1px solid #f0f2f4;align-items:center;gap:8px;">
-          <div>
-            <div style="font-size:14px;font-weight:600;" data-i18n="cmp.r1.h">Registro desde Telegram</div>
-            <div style="font-size:12px;color:#9ca3af;margin-top:2px;" data-i18n="cmp.r1.s">sin abrir ninguna app</div>
-          </div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-        </div>
-        <div class="table-row" style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:15px 22px;border-bottom:1px solid #f0f2f4;align-items:center;gap:8px;">
-          <div>
-            <div style="font-size:14px;font-weight:600;" data-i18n="cmp.r2.h">IA categoriza automáticamente</div>
-            <div style="font-size:12px;color:#9ca3af;margin-top:2px;" data-i18n="cmp.r2.s">sin elegir categorías a mano</div>
-          </div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-        </div>
-        <div class="table-row" style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:15px 22px;border-bottom:1px solid #f0f2f4;align-items:center;gap:8px;">
-          <div>
-            <div style="font-size:14px;font-weight:600;" data-i18n="cmp.r3.h">Gastos compartidos</div>
-            <div style="font-size:12px;color:#9ca3af;margin-top:2px;" data-i18n="cmp.r3.s">quién debe qué, en tiempo real</div>
-          </div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-        </div>
-        <div class="table-row" style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:15px 22px;border-bottom:1px solid #f0f2f4;align-items:center;gap:8px;">
-          <div>
-            <div style="font-size:14px;font-weight:600;" data-i18n="cmp.r4.h">Dashboard de analíticas</div>
-            <div style="font-size:12px;color:#9ca3af;margin-top:2px;" data-i18n="cmp.r4.s">gráficos, tendencias, categorías</div>
-          </div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-        </div>
-        <div class="table-row" style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;padding:15px 22px;align-items:center;gap:8px;">
-          <div>
-            <div style="font-size:14px;font-weight:600;" data-i18n="cmp.r5.h">Reparto personalizado</div>
-            <div style="font-size:12px;color:#9ca3af;margin-top:2px;" data-i18n="cmp.r5.s">50/50, 60/40, cualquier %</div>
-          </div>
-          <div style="text-align:center;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 9 7 13 15 5"/></svg></div>
-          <div style="text-align:center;color:#d1d5db;font-size:16px;line-height:1;">—</div>
-          <div class="cell-partial" data-i18n="cmp.partial">Parcial</div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;">
 
-  <!-- ══ PRICING ════════════════════════════════════════════════════════════ -->
-  <section id="pricing" style="padding:88px 24px;">
-    <div style="max-width:820px;margin:0 auto;">
-      <div data-reveal style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;text-align:center;margin-bottom:44px;">
-        <h2 style="font-size:clamp(26px,3.8vw,38px);font-weight:800;letter-spacing:-.02em;margin:0 0 16px;" data-i18n="pricing.title">Así serán los planes al lanzar.</h2>
-        <div style="display:inline-flex;align-items:center;gap:8px;background:#ecfdf5;border:1px solid #a7f3d0;border-radius:999px;padding:8px 18px;margin-bottom:12px;">
-          <span style="width:6px;height:6px;border-radius:50%;background:#059669;display:inline-block;flex-shrink:0;"></span>
-          <span style="font-size:13.5px;color:#047857;font-weight:600;" data-i18n="pricing.trial_badge">14 días gratis para empezar</span>
-        </div>
-        <p style="color:#6b7280;font-size:15px;margin:0;" data-i18n="pricing.sub">Sin contratos. Sin permanencia. Cancela cuando quieras.</p>
-      </div>
-
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px;align-items:stretch;">
-
-        <!-- Starter -->
-        <div data-reveal data-reveal-delay="0.05" class="hover-lift" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1.5px solid #e5e7eb;border-radius:22px;padding:34px;display:flex;flex-direction:column;">
-          <div style="font-size:12px;font-weight:700;color:#6b7280;letter-spacing:.06em;text-transform:uppercase;" data-i18n="pricing.starter_label">Starter</div>
-          <div style="display:flex;align-items:baseline;gap:5px;margin:12px 0 4px;">
-            <span style="font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;">5€</span>
-            <span style="color:#9ca3af;font-size:14px;" data-i18n="pricing.per_mo">/mes</span>
+        <!-- Fase 1 -->
+        <div data-reveal data-reveal-delay="0.05" class="hover-lift" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1.5px solid #a7f3d0;border-radius:18px;padding:28px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#ecfdf5;border:2px solid #059669;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;font-weight:800;color:#059669;">1</div>
+            <span style="font-size:12px;font-weight:800;color:#059669;letter-spacing:.06em;text-transform:uppercase;" data-i18n="roadmap.phase1_label">Fase 1: En desarrollo</span>
           </div>
-          <p style="color:#6b7280;font-size:13.5px;margin:0 0 24px;line-height:1.55;" data-i18n="pricing.starter_desc">Para controlar tus gastos personales.</p>
-          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px;margin-top:auto;">
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.starter_f1">App web y móvil</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.starter_f2">Bot de Telegram con IA</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.starter_f3">Gastos ilimitados, IA categoriza sola</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.starter_f4">Dashboard del mes actual</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#9ca3af;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#d1d5db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="3" x2="12" y2="12"/><line x1="12" y1="3" x2="3" y2="12"/></svg>
-              <span data-i18n="pricing.starter_f5_neg">Sin gastos compartidos</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#9ca3af;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#d1d5db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="3" x2="12" y2="12"/><line x1="12" y1="3" x2="3" y2="12"/></svg>
-              <span data-i18n="pricing.starter_f6_neg">Sin historial completo</span>
-            </div>
-          </div>
-          <a href="#signup" style="display:block;text-align:center;background:#f3f4f6;color:#111827;font-weight:700;font-size:14.5px;padding:13px;border-radius:12px;" data-i18n="pricing.starter_cta">Quiero acceso anticipado</a>
-          <p style="text-align:center;font-size:12px;color:#9ca3af;margin:10px 0 0;" data-i18n="pricing.starter_note">5€/mes · 14 días gratis para empezar</p>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 10px;" data-i18n="roadmap.phase1_h">Tracker personal con IA</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;">
+            <li style="font-size:13.5px;color:#4b5563;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase1_f1">✓ App móvil (iOS y Android)</li>
+            <li style="font-size:13.5px;color:#4b5563;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase1_f2">✓ Bot de Telegram con IA</li>
+            <li style="font-size:13.5px;color:#4b5563;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase1_f3">✓ Categorización automática</li>
+            <li style="font-size:13.5px;color:#4b5563;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase1_f4">✓ Dashboard con gráficas</li>
+          </ul>
         </div>
 
-        <!-- Pro -->
-        <div data-reveal data-reveal-delay="0.15" class="hover-lift-sm" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;position:relative;background:#fff;border:2px solid #059669;border-radius:22px;padding:34px;animation:glowPulse 3s ease-in-out infinite;display:flex;flex-direction:column;">
-          <div style="position:absolute;top:-13px;left:50%;transform:translateX(-50%);white-space:nowrap;background:#059669;color:#fff;font-size:11px;font-weight:800;letter-spacing:.07em;padding:5px 14px;border-radius:999px;" data-i18n="pricing.pro_badge">MÁS POPULAR</div>
-          <div style="font-size:12px;font-weight:700;color:#059669;letter-spacing:.06em;text-transform:uppercase;" data-i18n="pricing.pro_label">Pro</div>
-          <div style="display:flex;align-items:baseline;gap:5px;margin:12px 0 4px;">
-            <span style="font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1;">9€</span>
-            <span style="color:#9ca3af;font-size:14px;" data-i18n="pricing.per_mo">/mes</span>
+        <!-- Fase 2 -->
+        <div data-reveal data-reveal-delay="0.15" class="hover-lift" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1.5px solid #e5e7eb;border-radius:18px;padding:28px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#f3f4f6;border:2px solid #d1d5db;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;font-weight:800;color:#9ca3af;">2</div>
+            <span style="font-size:12px;font-weight:800;color:#9ca3af;letter-spacing:.06em;text-transform:uppercase;" data-i18n="roadmap.phase2_label">Fase 2: Próximamente</span>
           </div>
-          <p style="color:#6b7280;font-size:13.5px;margin:0 0 24px;line-height:1.55;" data-i18n="pricing.pro_desc">Para parejas y grupos. Control total.</p>
-          <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px;margin-top:auto;">
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.pro_f1">Todo lo de Starter</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;font-weight:600;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.pro_f2">Gastos compartidos y quién debe qué</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.pro_f3">Reparto personalizado (50/50, 60/40, custom)</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.pro_f4">Historial completo y exportar CSV</span>
-            </div>
-            <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;">
-              <svg style="flex-shrink:0;margin-top:2px" width="15" height="15" viewBox="0 0 15 15" fill="none" stroke="#059669" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="2 7.5 5.5 11 13 4"/></svg>
-              <span data-i18n="pricing.pro_f5">Analíticas avanzadas y tendencias</span>
-            </div>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 10px;" data-i18n="roadmap.phase2_h">Gastos en pareja</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;">
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase2_f1">· Gastos compartidos al 50%</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase2_f2">· Balance y quién debe qué</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase2_f3">· Invitar a tu pareja</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase2_f4">· Voz con Siri / Google</li>
+          </ul>
+        </div>
+
+        <!-- Fase 3 -->
+        <div data-reveal data-reveal-delay="0.25" class="hover-lift" style="opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;background:#fff;border:1.5px solid #e5e7eb;border-radius:18px;padding:28px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#f3f4f6;border:2px solid #d1d5db;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:13px;font-weight:800;color:#9ca3af;">3</div>
+            <span style="font-size:12px;font-weight:800;color:#9ca3af;letter-spacing:.06em;text-transform:uppercase;" data-i18n="roadmap.phase3_label">Fase 3: Futuro</span>
           </div>
-          <a href="#signup" style="position:relative;overflow:hidden;display:block;text-align:center;background:#059669;color:#fff;font-weight:700;font-size:14.5px;padding:13px;border-radius:12px;box-shadow:0 8px 18px rgba(5,150,105,.26);">
-            <span data-i18n="pricing.pro_cta">Quiero acceso anticipado</span>
-            <span style="position:absolute;top:0;left:-70%;width:60%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-18deg);animation:shimmerSweep 2.4s ease-in-out infinite;pointer-events:none;"></span>
-          </a>
-          <p style="text-align:center;font-size:12px;color:#9ca3af;margin:10px 0 0;" data-i18n="pricing.pro_note">9€/mes · 14 días gratis para empezar</p>
+          <h3 style="font-size:17px;font-weight:700;margin:0 0 10px;" data-i18n="roadmap.phase3_h">Grupos y splits avanzados</h3>
+          <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;">
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase3_f1">· Grupos de amigos / compañeros</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase3_f2">· Porcentajes personalizados</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase3_f3">· Foto de ticket (OCR)</li>
+            <li style="font-size:13.5px;color:#9ca3af;display:flex;gap:8px;align-items:baseline;" data-i18n="roadmap.phase3_f4">· Exportar CSV / PDF</li>
+          </ul>
         </div>
 
       </div>
@@ -591,32 +551,34 @@
   /* ── Translations ───────────────────────────────────────────────────────── */
   const LANG = {
     es: {
-      'meta.title': 'SpendingAI — La app de gastos que realmente usarás',
+      'meta.title': 'SpendingAI · Tu tracker de gastos con IA',
       'nav.how': 'Cómo funciona',
-      'nav.pricing': 'Precios',
+      'nav.roadmap': 'Roadmap',
       'nav.cta': 'Apuntarme',
-      'hero.badge': 'En desarrollo · Sé el primero en probarlo',
-      'hero.h1': 'La app de gastos<br>que <span style="color:#059669;">realmente usarás</span>.',
-      'hero.p': 'Registra, categoriza y comparte gastos desde la web, el móvil o Telegram. La IA lo categoriza sola — tú solo escribes lo que gastaste.',
+      'hero.badge': 'Próximamente · Sé el primero en probarlo',
+      'hero.h1': 'Apunta tus gastos<br>como <span style="color:#059669;">tú prefieras</span>.',
+      'hero.p': 'Escríbelo en la app, mándalo por Telegram o díselo por voz. La IA lo categoriza sola. El canal lo eliges tú en cada momento.',
       'hero.cta1': 'Quiero acceso anticipado',
-      'hero.cta2': 'Ver cómo funcionará',
-      'hero.avail': 'Disponible próximamente · Web, iOS, Android y Telegram',
-      'hero.phone_label': 'Integración con Telegram — incluida en todos los planes',
+      'hero.cta2': 'Ver cómo funciona',
+      'hero.avail': 'Próximamente · App móvil y bot de Telegram',
+      'hero.phone_label': 'App · Telegram · Voz. Tú decides cómo apuntarlo',
       'chat.online': 'en línea',
       'chat.placeholder': 'Escribe un gasto…',
       'stats.s1': 'de usuarios abandona las apps de gastos',
       'stats.s2': 'para registrar un gasto con IA',
-      'stats.s3': 'días gratis para probar',
+      'stats.s2_suffix': ' seg',
+      'stats.s3': 'canales de entrada en desarrollo',
+      'stats.s3_suffix': ' canales',
       'problem.title': 'El problema no es la disciplina.<br>Es la fricción.',
       'problem.sub': 'La mayoría lo intenta. Casi nadie aguanta más de tres días seguidos.',
       'problem.c1.h': 'Demasiados pasos',
       'problem.c1.p': 'Abrir la app, elegir categoría, escribir el importe… al tercer día lo dejas. La fricción mata el hábito.',
       'problem.c2.h': 'Tickets que desaparecen',
       'problem.c2.p': 'Se acumulan en el bolsillo o directamente los tiras. Si no lo apuntas en el momento, no lo apuntas.',
-      'problem.c3.h': 'Gastos compartidos sin control',
-      'problem.c3.p': 'Dividir la cena acaba siempre en «ya me lo apunto». Nadie lo apunta. Hay tensión. Es evitable.',
+      'problem.c3.h': 'El dinero desaparece',
+      'problem.c3.p': 'A final de mes no sabes dónde fue. Sin apuntarlo en el momento, no hay análisis posible. Y el momento siempre es inoportuno.',
       'how.title': 'Tres pasos. Sin curva de aprendizaje.',
-      'how.sub': 'Úsalo desde la web, el móvil o Telegram — donde prefieras en cada momento.',
+      'how.sub': 'Úsalo desde la web, el móvil o Telegram. Donde prefieras en cada momento.',
       'how.s1_label': 'PASO 01',
       'how.s1.h': 'Abre la app o Telegram',
       'how.s1.p': 'Disponible en web, iOS y Android. O desde Telegram si prefieres no abrir nada nuevo.',
@@ -625,46 +587,78 @@
       'how.s2.p': '«Mercadona 67,40» o «cena 58 y dos cañas 6». La IA entiende lenguaje normal y categoriza sin que toques nada.',
       'how.s3_label': 'PASO 03',
       'how.s3.h': 'Listo. Dashboard actualizado.',
-      'how.s3.p': 'El gasto aparece categorizado en tu panel. Si hay deuda compartida, se recalcula al instante.',
+      'how.s3.p': 'El gasto aparece categorizado en tu panel con gráficas y resumen mensual. Sin tocar nada más.',
+      'flow.title': 'Un sitio. Múltiples formas de llegar.',
+      'flow.sub': 'Da igual cómo lo apuntes. La IA lo procesa y todo acaba ordenado en el mismo lugar.',
+      'flow.inputs_label': 'Cómo apuntas el gasto',
+      'flow.in1_h': 'Manual en la app', 'flow.in1_s': 'iOS y Android',
+      'flow.in2_h': 'Bot de Telegram', 'flow.in2_s': 'sin abrir la app',
+      'flow.in3_h': 'Voz (Siri / Google)', 'flow.in3_s': 'Próximamente',
+      'flow.in4_h': 'Foto de ticket', 'flow.in4_s': 'Fase 3',
+      'flow.ai_label': 'IA categoriza automáticamente',
+      'flow.outputs_label': 'Lo que obtienes',
+      'flow.out1_h': 'Dashboard', 'flow.out1_s': 'gráficas por categoría',
+      'flow.out2_h': 'Resumen mensual', 'flow.out2_s': 'cuánto y en qué',
+      'flow.out3_h': 'Historial completo', 'flow.out3_s': 'todos tus gastos',
       'cmp.title': 'Por qué funciona mejor',
-      'cmp.sub': 'Otras apps te hacen elegir entre presupuesto personal <em>o</em> gastos compartidos. Nosotros hacemos las dos cosas, con IA.',
-      'cmp.col_budget': 'Apps de<br>presupuesto',
-      'cmp.col_split': 'Apps de<br>división',
+      'cmp.sub': 'El tracker manual falla porque tienes que abrirlo y rellenarlo. SpendingAI se adapta a como vives, no al revés.',
+      'cmp.col_budget': 'Trackers<br>manuales',
+      'cmp.col_split': 'Hojas de<br>cálculo',
       'cmp.r1.h': 'Registro desde Telegram',
       'cmp.r1.s': 'sin abrir ninguna app',
       'cmp.r2.h': 'IA categoriza automáticamente',
       'cmp.r2.s': 'sin elegir categorías a mano',
-      'cmp.r3.h': 'Gastos compartidos',
-      'cmp.r3.s': 'quién debe qué, en tiempo real',
+      'cmp.r3.h': 'Múltiples canales de entrada',
+      'cmp.r3.s': 'app, Telegram, voz (próximamente)',
       'cmp.r4.h': 'Dashboard de analíticas',
       'cmp.r4.s': 'gráficos, tendencias, categorías',
-      'cmp.r5.h': 'Reparto personalizado',
-      'cmp.r5.s': '50/50, 60/40, cualquier %',
+      'cmp.r5.h': 'Sin registro manual obligatorio',
+      'cmp.r5.s': 'escribe, habla o manda un mensaje',
       'cmp.partial': 'Parcial',
-      'pricing.title': 'Así serán los planes al lanzar.',
-      'pricing.trial_badge': '14 días gratis para empezar',
-      'pricing.sub': 'Sin contratos. Sin permanencia. Cancela cuando quieras.',
+      'pricing.title': 'Gratis mientras está en beta.',
+      'pricing.trial_badge': 'Sin tarjeta. Sin compromisos.',
+      'pricing.sub': 'Queremos que lo uses y nos cuentes qué echas de menos.',
       'pricing.per_mo': '/mes',
-      'pricing.starter_label': 'Starter',
-      'pricing.starter_desc': 'Para controlar tus gastos personales.',
-      'pricing.starter_f1': 'App web y móvil',
-      'pricing.starter_f2': 'Bot de Telegram con IA',
-      'pricing.starter_f3': 'Gastos ilimitados, IA categoriza sola',
-      'pricing.starter_f4': 'Dashboard del mes actual',
-      'pricing.starter_f5_neg': 'Sin gastos compartidos',
-      'pricing.starter_f6_neg': 'Sin historial completo',
-      'pricing.starter_cta': 'Quiero acceso anticipado',
-      'pricing.starter_note': '5€/mes · 14 días gratis para empezar',
+      'pricing.beta_label': 'Beta Personal',
+      'pricing.beta_badge': 'DISPONIBLE AHORA',
+      'pricing.beta_price': 'Gratis',
+      'pricing.beta_desc': 'Todo lo que necesitas para controlar tus gastos personales.',
+      'pricing.beta_f1': 'App móvil (iOS y Android)',
+      'pricing.beta_f2': 'Bot de Telegram con IA',
+      'pricing.beta_f3': 'Gastos ilimitados, IA categoriza sola',
+      'pricing.beta_f4': 'Dashboard con gráficas por categoría',
+      'pricing.beta_f5': 'Historial completo',
+      'pricing.beta_cta': 'Quiero acceso anticipado',
+      'pricing.beta_note': 'Sin tarjeta de crédito',
       'pricing.pro_label': 'Pro',
-      'pricing.pro_badge': 'MÁS POPULAR',
-      'pricing.pro_desc': 'Para parejas y grupos. Control total.',
-      'pricing.pro_f1': 'Todo lo de Starter',
-      'pricing.pro_f2': 'Gastos compartidos y quién debe qué',
+      'pricing.pro_badge': 'PRÓXIMAMENTE',
+      'pricing.pro_desc': 'Para parejas y grupos. Control total compartido.',
+      'pricing.pro_f1': 'Todo lo de Beta Personal',
+      'pricing.pro_f2': 'Gastos compartidos y balance en tiempo real',
       'pricing.pro_f3': 'Reparto personalizado (50/50, 60/40, custom)',
-      'pricing.pro_f4': 'Historial completo y exportar CSV',
-      'pricing.pro_f5': 'Analíticas avanzadas y tendencias',
-      'pricing.pro_cta': 'Quiero acceso anticipado',
-      'pricing.pro_note': '9€/mes · 14 días gratis para empezar',
+      'pricing.pro_f4': 'Voz con Siri / Google Assistant',
+      'pricing.pro_cta': 'Avisarme cuando esté disponible',
+      'pricing.pro_note': 'Precio estimado · puede variar',
+      'roadmap.title': 'El plan, sin humo.',
+      'roadmap.sub': 'Esto es lo que hay ahora y lo que viene. Sin fechas inventadas.',
+      'roadmap.phase1_label': 'Fase 1: En desarrollo',
+      'roadmap.phase1_h': 'Tracker personal con IA',
+      'roadmap.phase1_f1': '· App móvil (iOS y Android)',
+      'roadmap.phase1_f2': '· Bot de Telegram con IA',
+      'roadmap.phase1_f3': '· Categorización automática',
+      'roadmap.phase1_f4': '· Dashboard con gráficas',
+      'roadmap.phase2_label': 'Fase 2: Próximamente',
+      'roadmap.phase2_h': 'Gastos en pareja',
+      'roadmap.phase2_f1': '· Gastos compartidos al 50%',
+      'roadmap.phase2_f2': '· Balance y quién debe qué',
+      'roadmap.phase2_f3': '· Invitar a tu pareja',
+      'roadmap.phase2_f4': '· Voz con Siri / Google',
+      'roadmap.phase3_label': 'Fase 3: Futuro',
+      'roadmap.phase3_h': 'Grupos y splits avanzados',
+      'roadmap.phase3_f1': '· Grupos de amigos / compañeros',
+      'roadmap.phase3_f2': '· Porcentajes personalizados',
+      'roadmap.phase3_f3': '· Foto de ticket (OCR)',
+      'roadmap.phase3_f4': '· Exportar CSV / PDF',
       'signup.title': 'Sé el primero en probarlo',
       'signup.sub': 'Déjanos tu email y te avisamos en cuanto esté listo.',
       'signup.placeholder': 'tu@email.com',
@@ -679,32 +673,34 @@
       'footer.made': 'Hecho con cariño en España · © 2026 SpendingAI',
     },
     en: {
-      'meta.title': 'SpendingAI — The expense app you\'ll actually use',
+      'meta.title': 'SpendingAI · The expense app you\'ll actually use',
       'nav.how': 'How it works',
-      'nav.pricing': 'Pricing',
+      'nav.roadmap': 'Roadmap',
       'nav.cta': 'Join waitlist',
-      'hero.badge': 'In development · Be the first to try it',
+      'hero.badge': 'Coming soon · Be the first to try it',
       'hero.h1': 'The expense app<br>you\'ll <span style="color:#059669;">actually use</span>.',
-      'hero.p': 'Log, categorize, and share expenses from web, mobile, or Telegram. AI categorizes automatically — you just write what you spent.',
+      'hero.p': 'Log expenses from the app, Telegram, or by voice. AI categorizes automatically. You just write what you spent.',
       'hero.cta1': 'Get early access',
       'hero.cta2': 'See how it works',
-      'hero.avail': 'Coming soon · Web, iOS, Android and Telegram',
-      'hero.phone_label': 'Telegram integration — included in all plans',
+      'hero.avail': 'Coming soon · Mobile app and Telegram bot',
+      'hero.phone_label': 'App · Telegram · Voice. You choose how to log it',
       'chat.online': 'online',
       'chat.placeholder': 'Write an expense…',
       'stats.s1': 'of users quit expense tracking apps',
       'stats.s2': 'to log an expense with AI',
-      'stats.s3': 'days free to try',
+      'stats.s2_suffix': 's',
+      'stats.s3': 'input channels in development',
+      'stats.s3_suffix': ' channels',
       'problem.title': 'The problem isn\'t discipline.<br>It\'s friction.',
       'problem.sub': 'Most people try. Almost no one lasts more than three days.',
       'problem.c1.h': 'Too many steps',
       'problem.c1.p': 'Open the app, pick a category, type the amount… by day three you quit. Friction kills habits.',
       'problem.c2.h': 'Receipts that disappear',
       'problem.c2.p': 'They pile up in your pocket or go straight in the bin. If you don\'t log it right away, you never will.',
-      'problem.c3.h': 'Shared expenses out of control',
-      'problem.c3.p': 'Splitting dinner always ends in "I\'ll note it later". Nobody notes it. There\'s tension. It\'s avoidable.',
+      'problem.c3.h': 'Money just disappears',
+      'problem.c3.p': 'At the end of the month you have no idea where it went. Without logging it in the moment, there\'s no analysis. And the moment is always inconvenient.',
       'how.title': 'Three steps. Zero learning curve.',
-      'how.sub': 'Use it from the web, mobile, or Telegram — wherever you prefer.',
+      'how.sub': 'Use it from the web, mobile, or Telegram. Wherever you prefer.',
       'how.s1_label': 'STEP 01',
       'how.s1.h': 'Open the app or Telegram',
       'how.s1.p': 'Available on web, iOS and Android. Or via Telegram if you\'d rather not open anything new.',
@@ -713,7 +709,19 @@
       'how.s2.p': '"Groceries 67.40" or "dinner 58 and two beers 6". AI understands plain language and categorizes without you doing anything.',
       'how.s3_label': 'STEP 03',
       'how.s3.h': 'Done. Dashboard updated.',
-      'how.s3.p': 'The expense appears categorized in your dashboard. Shared debt recalculates instantly.',
+      'how.s3.p': 'The expense appears categorized in your dashboard with charts and monthly summary. Nothing else to do.',
+      'flow.title': 'One place. Multiple ways to get there.',
+      'flow.sub': 'It doesn\'t matter how you log it. AI processes it and everything ends up organized in the same place.',
+      'flow.inputs_label': 'How you log the expense',
+      'flow.in1_h': 'Manual in the app', 'flow.in1_s': 'iOS & Android',
+      'flow.in2_h': 'Telegram bot', 'flow.in2_s': 'without opening the app',
+      'flow.in3_h': 'Voice (Siri / Google)', 'flow.in3_s': 'Coming soon',
+      'flow.in4_h': 'Receipt photo', 'flow.in4_s': 'Phase 3',
+      'flow.ai_label': 'AI categorizes automatically',
+      'flow.outputs_label': 'What you get',
+      'flow.out1_h': 'Dashboard', 'flow.out1_s': 'charts by category',
+      'flow.out2_h': 'Monthly summary', 'flow.out2_s': 'how much and on what',
+      'flow.out3_h': 'Full history', 'flow.out3_s': 'all your expenses',
       'cmp.title': 'Why it works better',
       'cmp.sub': 'Other apps make you choose between personal budgeting <em>or</em> shared expenses. We do both, with AI.',
       'cmp.col_budget': 'Budget<br>apps',
@@ -753,6 +761,26 @@
       'pricing.pro_f5': 'Advanced analytics and trends',
       'pricing.pro_cta': 'Get early access',
       'pricing.pro_note': '€9/mo · 14 days free to start',
+      'roadmap.title': 'The plan, no fluff.',
+      'roadmap.sub': 'This is what exists now and what\'s coming. No made-up dates.',
+      'roadmap.phase1_label': 'Phase 1: In development',
+      'roadmap.phase1_h': 'Personal AI expense tracker',
+      'roadmap.phase1_f1': '· Mobile app (iOS & Android)',
+      'roadmap.phase1_f2': '· Telegram bot with AI',
+      'roadmap.phase1_f3': '· Automatic categorization',
+      'roadmap.phase1_f4': '· Dashboard with charts',
+      'roadmap.phase2_label': 'Phase 2: Coming soon',
+      'roadmap.phase2_h': 'Shared expenses for couples',
+      'roadmap.phase2_f1': '· Shared expenses 50/50',
+      'roadmap.phase2_f2': '· Balance and who owes what',
+      'roadmap.phase2_f3': '· Invite your partner',
+      'roadmap.phase2_f4': '· Voice with Siri / Google',
+      'roadmap.phase3_label': 'Phase 3: Future',
+      'roadmap.phase3_h': 'Groups & advanced splits',
+      'roadmap.phase3_f1': '· Friend / flatmate groups',
+      'roadmap.phase3_f2': '· Custom percentages',
+      'roadmap.phase3_f3': '· Receipt photo (OCR)',
+      'roadmap.phase3_f4': '· Export CSV / PDF',
       'signup.title': 'Be the first to try it',
       'signup.sub': 'Leave your email and we\'ll notify you when it\'s ready.',
       'signup.placeholder': 'you@email.com',
@@ -888,14 +916,14 @@
     const l = currentLang;
     const m = l === 'en' ? {
       u1: 'Groceries 67.40',
-      b1: 'Logged: 67.40 in Groceries',
+      b1: 'Logged ✓ · 67.40 in Groceries',
       u2: 'dinner 58 and two beers 6',
-      b2: '2 items: 58 Restaurants + 6 Fun · Carlos owes you 32'
+      b2: '2 expenses: 58 Restaurants + 6 Entertainment'
     } : {
       u1: 'Mercadona 67,40',
-      b1: 'Anotado: 67,40 € en Alimentación',
+      b1: 'Anotado ✓ · 67,40 € en Alimentación',
       u2: 'cena japonesa 58 y dos cañas 6',
-      b2: '2 gastos: 58 € Restaurantes + 6 € Ocio · Carlos te debe 32 €'
+      b2: '2 gastos: 58 € Restaurantes + 6 € Ocio'
     };
     s(700,  () => pushBubble(m.u1, 'user'));
     s(1000, () => pushTyping());
